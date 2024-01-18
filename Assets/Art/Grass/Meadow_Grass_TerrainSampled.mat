@@ -36,7 +36,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Meadow_Grass_TerrainSampled
-  m_Shader: {fileID: -6465566751694194690, guid: 067c5abdeb56c7b48b9986ffea02731d,
+  m_Shader: {fileID: -6465566751694194690, guid: 1183169530e3ee24fabccd40074bff49,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -85,6 +85,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _EmissiveColorMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FoliageDisplacementMap:
+        m_Texture: {fileID: 8400000, guid: e441aca2fc5a3704ebcd0e9cb765aef9, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _HeightMap:
@@ -293,6 +297,7 @@ Material:
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
     - _ExcludeFromTUAndAA: 0
+    - _FoliageDisplacementCameraSize: 10
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
@@ -406,6 +411,7 @@ Material:
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColor: {r: 1, g: 1, b: 1, a: 1}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
+    - _FoliageDisplacementCameraPosition: {r: 5, g: 5, b: 0, a: 0}
     - _From: {r: 0.7372549, g: 0.6384314, b: 0.49019608, a: 1}
     - _InvPrimScale: {r: 1, g: 1, b: 0, a: 0}
     - _IridescenceThicknessRemap: {r: 0, g: 1, b: 0, a: 0}
