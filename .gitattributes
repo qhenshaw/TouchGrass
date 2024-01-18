@@ -165,3 +165,9 @@ AKSoundEngine lfs
 *.bank lfs
 # assigning the MacOS FMOD plugin to lfs since it is very large
 \Assets\Plugins\FMOD\platforms\mac\lib\fmodstudio.bundle\Contents\MacOS\fmodstudio lfs
+
+# special case tracking for WebGL builds + GitHub pages + LFS
+docs/**/*.png -lfs
+docs/**/*.ico -lfs
+docs/**/*.data -lfs
+docs/**/*.wasm -lfs
