@@ -10,11 +10,6 @@ public class GrassSpawner : MonoBehaviour
     [SerializeField] private float _positionJitter = 0.2f;
     [SerializeField] private Vector3 _extents = new Vector3(10f, 0f, 10f);
 
-    private void Start()
-    {
-        Spawn();
-    }
-
     [ContextMenu("Spawn")]
     public void Spawn()
     {
