@@ -6,7 +6,7 @@ using UnityEngine.VFX;
 public class HandControl : MonoBehaviour
 {
     [SerializeField] private float _lerpSpeed = 5f;
-    [SerializeField] private VisualEffect _vfxTrail;
+    [SerializeField] private TrailRenderer _trail;
     [SerializeField] private Vector2 _height = new Vector2(0.25f, 0.75f);
 
     private Vector3 _position = new Vector3(5f, 1f, 5f);
@@ -28,6 +28,6 @@ public class HandControl : MonoBehaviour
         }
 
         transform.position = Vector3.Lerp(transform.position, _position, _lerpSpeed * Time.deltaTime);
-        _vfxTrail.SetFloat("Strength", 1f - Mathf.InverseLerp(_height.x, _height.y, transform.position.y));
+        _trail.emitting = Mathf.InverseLerp(_height.x, _height.y, transform.position.y) < 0.5f;
     }
 }
